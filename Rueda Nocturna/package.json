@@ -1,0 +1,12 @@
+{
+  "name": "nocturna",
+  "version": "1.0.0",
+  "description": "Librería de componentes y sección principal de Rueda Nocturna con Tailwind CLI",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./src/output.css --minify",
+    "watch": "tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+  },
+  "dependencies": {
+    "tailwindcss": "^3.4.19"
+  }
+}
