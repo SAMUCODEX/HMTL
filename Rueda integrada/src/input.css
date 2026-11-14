@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* 1. Botón Primario: Acción principal de conversión */
+  .btn-primary {
+    @apply inline-flex items-center justify-center w-full sm:w-auto px-7 py-3.5 font-bold text-sm sm:text-base tracking-wide uppercase text-center bg-emerald-500 text-slate-950 rounded-xl shadow-lg shadow-emerald-500/25 hover:bg-emerald-400 active:bg-emerald-600 focus:outline-none focus:ring-4 focus:ring-emerald-400/60 focus:ring-offset-2 focus:ring-offset-slate-950 transition-all duration-200 cursor-pointer;
+  }
+
+  /* 2. Botón Secundario: Acción alternativa de navegación */
+  .btn-secondary {
+    @apply inline-flex items-center justify-center w-full sm:w-auto px-7 py-3.5 font-semibold text-sm sm:text-base tracking-wide text-center bg-slate-800 text-slate-200 rounded-xl border border-slate-700 shadow-md shadow-slate-950/40 hover:bg-slate-700 hover:text-white hover:border-slate-600 active:bg-slate-900 focus:outline-none focus:ring-4 focus:ring-slate-400/50 focus:ring-offset-2 focus:ring-offset-slate-950 transition-all duration-200 cursor-pointer;
+  }
+
+  /* 3. Botón Outline / Terciario: Acción de exploración y catálogo */
+  .btn-outline {
+    @apply inline-flex items-center justify-center w-full sm:w-auto px-7 py-3.5 font-semibold text-sm sm:text-base tracking-wide text-center bg-transparent text-emerald-400 rounded-xl border-2 border-emerald-500 hover:bg-emerald-500/10 hover:border-emerald-400 hover:text-emerald-300 active:bg-emerald-500/20 focus:outline-none focus:ring-4 focus:ring-emerald-500/50 focus:ring-offset-2 focus:ring-offset-slate-950 transition-all duration-200 cursor-pointer;
+  }
+}

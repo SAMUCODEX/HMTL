@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservas e Inscripción · Rueda Libre & Rueda Nocturna Medellín</title>
+  <meta name="description" content="Formulario de reserva en línea para alquiler de bicicletas o inscripción a las rutas nocturnas de Rueda Nocturna en Medellín.">
+  <link rel="icon" type="image/png" href="img/RUEDALIBRE.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/output.css">
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen font-sans antialiased selection:bg-emerald-500 selection:text-slate-950">
+
+  <a href="#contenido-principal" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-emerald-500 focus:text-slate-950 focus:font-bold focus:rounded-lg focus:outline-none focus:ring-4 focus:ring-emerald-400">
+    Saltar al contenido principal
+  </a>
+
+  <!-- Encabezado Global -->
+  <header class="w-full bg-slate-950/95 backdrop-blur-md border-b border-slate-800 sticky top-0 z-50">
+    <nav aria-label="Navegación principal" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex items-center justify-between gap-4">
+      
+      <a href="index.html" class="flex items-center gap-3 shrink-0 focus:outline-none focus:ring-2 focus:ring-emerald-400 rounded-xl group" aria-label="Rueda Libre, inicio">
+        <img src="img/RUEDALIBRE.png" alt="Logo de Rueda Libre" class="h-10 sm:h-12 w-auto object-contain drop-shadow group-hover:scale-105 transition-transform duration-200">
+        <div class="hidden sm:flex flex-col text-left">
+          <span class="text-lg font-black text-white tracking-tight leading-none">Rueda Libre</span>
+          <span class="text-[11px] font-bold text-emerald-400 tracking-wider uppercase">Reservas Online</span>
+        </div>
+      </a>
+
+      <ul class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-300 list-none p-0 m-0">
+        <li><a href="index.html" class="hover:text-emerald-400 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-400 rounded px-1.5 py-1">Inicio</a></li>
+        <li><a href="flota.html" class="hover:text-emerald-400 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-400 rounded px-1.5 py-1">Servicios & Flota</a></li>
+        <li>
+          <a href="nocturna.html" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 hover:bg-emerald-500/20 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-400">
+            <span>🌙 Rutas Nocturnas</span>
+          </a>
+        </li>
+        <li><a href="tarifas.html" class="hover:text-emerald-400 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-400 rounded px-1.5 py-1">Tarifas</a></li>
+        <li><a href="contacto.html" class="hover:text-emerald-400 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-400 rounded px-1.5 py-1">Sede & Contacto</a></li>
+      </ul>
+
+      <div class="flex items-center gap-3">
+        <a href="reservas.html" class="btn-primary text-xs sm:text-sm px-5 sm:px-6 py-2.5 sm:py-3 shadow-md" aria-current="page">
+          Reservar Cupo
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="contenido-principal" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 py-8 sm:py-12">
+
+    <!-- HERO FORMULARIO -->
+    <header class="text-center space-y-3">
+      <span class="px-3.5 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 text-xs font-bold tracking-wider uppercase">
+        Reserva Inmediata
+      </span>
+      <h1 class="text-3xl sm:text-5xl font-black text-white tracking-tight">
+        Formulario de Reserva e Inscripción
+      </h1>
+      <p class="text-sm sm:text-base text-slate-300 max-w-2xl mx-auto">
+        Aparta tu bicicleta o asegura tu cupo en las salidas nocturnas guiadas. Nuestro equipo te contactará de inmediato por WhatsApp para confirmar.
+      </p>
+    </header>
+
+    <!-- AVISO DE EQUIPO Y SEGURIDAD -->
+    <aside aria-label="Aviso de confirmación" class="bg-slate-900/90 rounded-2xl border-l-4 border-emerald-400 border-r border-t border-b border-slate-800 p-5 flex items-start gap-4 text-xs sm:text-sm text-slate-300">
+      <span class="text-2xl">✅</span>
+      <div>
+        <strong class="text-white block font-bold">Reserva Segura y Sin Pagos Anticipados</strong>
+        <p class="text-slate-400 m-0">No requieres tarjeta de crédito para reservar. Pagas en la sede al momento de retirar tu bicicleta en efectivo o transferencia.</p>
+      </div>
+    </aside>
+
+    <!-- FORMULARIO ACCESIBLE -->
+    <form action="reservas.html" method="get" class="bg-slate-900/90 rounded-3xl border border-slate-800 p-6 sm:p-10 shadow-2xl space-y-8">
+      
+      <!-- Bloque 1: Datos Personales -->
+      <fieldset class="bg-slate-950/60 rounded-2xl border border-slate-800 p-5 sm:p-7 space-y-5">
+        <legend class="text-sm font-bold text-emerald-400 uppercase tracking-wider px-2">1. Tus Datos Personales</legend>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+          <div class="space-y-1.5">
+            <label for="nombre-completo" class="block text-xs font-semibold text-slate-300">Nombre Completo *</label>
+            <input type="text" id="nombre-completo" name="nombre_completo" autocomplete="name" minlength="3" required placeholder="Ej: Valentina Morales" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-400 transition-all">
+          </div>
+
+          <div class="space-y-1.5">
+            <label for="documento-id" class="block text-xs font-semibold text-slate-300">Cédula o Pasaporte *</label>
+            <input type="text" id="documento-id" name="documento" inputmode="numeric" pattern="[0-9]{6,10}" required placeholder="Ej: 1020304050" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-400 transition-all">
+          </div>
+
+          <div class="space-y-1.5">
+            <label for="celular-whatsapp" class="block text-xs font-semibold text-slate-300">Celular / WhatsApp *</label>
+            <input type="tel" id="celular-whatsapp" name="celular" autocomplete="tel" pattern="3[0-9]{9}" required placeholder="Ej: 3001234567" aria-describedby="ayuda-celular" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-400 transition-all">
+            <small id="ayuda-celular" class="block text-[11px] text-slate-400">10 dígitos iniciando por 3.</small>
+          </div>
+
+          <div class="space-y-1.5">
+            <label for="correo-electronico" class="block text-xs font-semibold text-slate-300">Correo Electrónico *</label>
+            <input type="email" id="correo-electronico" name="correo" autocomplete="email" required placeholder="tu@correo.com" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-400 transition-all">
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- Bloque 2: Tipo de Servicio -->
+      <fieldset class="bg-slate-950/60 rounded-2xl border border-slate-800 p-5 sm:p-7 space-y-5">
+        <legend class="text-sm font-bold text-emerald-400 uppercase tracking-wider px-2">2. Servicio y Preferencias</legend>
+
+        <div class="space-y-2">
+          <span class="block text-xs font-semibold text-slate-300">¿Qué tipo de actividad deseas realizar? *</span>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <label class="flex items-center gap-3 p-3.5 bg-slate-900 border border-slate-800 rounded-xl cursor-pointer hover:border-emerald-500/50 transition-colors">
+              <input type="radio" name="tipo_servicio" value="nocturna" checked class="text-emerald-500 focus:ring-emerald-400">
+              <span class="text-xs sm:text-sm font-bold text-white">🌙 Ruta Nocturna Guiada (Jue a Sáb)</span>
+            </label>
+            <label class="flex items-center gap-3 p-3.5 bg-slate-900 border border-slate-800 rounded-xl cursor-pointer hover:border-emerald-500/50 transition-colors">
+              <input type="radio" name="tipo_servicio" value="alquiler" class="text-emerald-500 focus:ring-emerald-400">
+              <span class="text-xs sm:text-sm font-bold text-white">☀️ Alquiler de Bici Diurno (Horas / Día)</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 pt-2">
+          
+          <div class="space-y-1.5">
+            <label for="fecha-reserva" class="block text-xs font-semibold text-slate-300">Fecha Deseada *</label>
+            <input type="date" id="fecha-reserva" name="fecha" min="2026-11-01" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:ring-2 focus:ring-emerald-400 transition-all">
+          </div>
+
+          <div class="space-y-1.5">
+            <label for="opcion-servicio" class="block text-xs font-semibold text-slate-300">Ruta o Modelo *</label>
+            <select id="opcion-servicio" name="opcion" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:ring-2 focus:ring-emerald-400 transition-all">
+              <option value="" disabled selected>Selecciona tu opción</option>
+              <optgroup label="Rutas Nocturnas">
+                <option value="luces-centro">Luces del Centro ($55.000)</option>
+                <option value="miradores">Miradores de la Ciudad ($75.000)</option>
+                <option value="palmas">Luna en Las Palmas ($95.000)</option>
+              </optgroup>
+              <optgroup label="Alquiler Diurno de Bici">
+                <option value="urbana">Urbana Clásica ($10.000/h)</option>
+                <option value="plegable">Urbana Plegable ($12.000/h)</option>
+                <option value="montana">Montaña Trail ($15.000/h)</option>
+                <option value="gravel">Gravel Aventura ($18.000/h)</option>
+                <option value="electrica">Eléctrica Urbana ($25.000/h)</option>
+                <option value="tandem">Tándem Doble ($20.000/h)</option>
+              </optgroup>
+            </select>
+          </div>
+
+          <div class="space-y-1.5">
+            <label for="cantidad-bicis" class="block text-xs font-semibold text-slate-300">Cantidad Personas / Bicis *</label>
+            <input type="number" id="cantidad-bicis" name="cantidad" min="1" max="10" value="1" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:ring-2 focus:ring-emerald-400 transition-all">
+          </div>
+
+        </div>
+
+        <div class="space-y-1.5 pt-2">
+          <label for="comentarios" class="block text-xs font-semibold text-slate-300">Comentarios o Estaturas (Opcional)</label>
+          <textarea id="comentarios" name="comentarios" rows="3" placeholder="Indica estatura de ciclistas, si traes casco propio o si es plan en pareja..." class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-400 transition-all"></textarea>
+        </div>
+      </fieldset>
+
+      <!-- Bloque 3: Aceptación y Envío -->
+      <div class="space-y-5">
+        <label class="flex items-start gap-3 cursor-pointer text-xs sm:text-sm text-slate-300">
+          <input type="checkbox" id="acepto-politicas" name="politicas" required class="mt-1 text-emerald-500 focus:ring-emerald-400 rounded">
+          <span>Acepto las normas de cuidado del equipo y las políticas viales de Rueda Libre Medellín.</span>
+        </label>
+
+        <button type="submit" class="btn-primary w-full py-4 text-base tracking-wider uppercase font-black">
+          Confirmar Reserva e Inscripción
+        </button>
+      </div>
+
+    </form>
+
+  </main>
+
+  <footer class="w-full bg-slate-950 border-t border-slate-800 mt-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-8 text-center sm:text-left">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 border-b border-slate-800 pb-8">
+        <div class="flex items-center gap-3">
+          <img src="img/RUEDALIBRE.png" alt="Rueda Libre" class="h-10 w-auto">
+          <span class="text-lg font-black text-white">Rueda Libre Medellín</span>
+        </div>
+        <p class="text-xs text-slate-400 m-0">Confirmación y soporte directo vía WhatsApp.</p>
+      </div>
+      <div class="flex flex-wrap items-center justify-center sm:justify-between gap-4 text-xs text-slate-400">
+        <div class="flex items-center gap-4">
+          <a href="index.html" class="hover:text-emerald-400">Inicio</a>
+          <a href="flota.html" class="hover:text-emerald-400">Flota</a>
+          <a href="nocturna.html" class="hover:text-emerald-400">Rutas Nocturnas</a>
+          <a href="tarifas.html" class="hover:text-emerald-400">Tarifas</a>
+          <a href="reservas.html" class="hover:text-emerald-400">Reservas</a>
+          <a href="contacto.html" class="hover:text-emerald-400">Contacto</a>
+        </div>
+        <p class="m-0">© 2026 Rueda Libre Medellín. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/573000000000" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-40 bg-emerald-500 text-slate-950 hover:bg-emerald-400 font-bold px-4 py-3 rounded-full shadow-2xl flex items-center gap-2 text-xs sm:text-sm focus:outline-none focus:ring-4 focus:ring-emerald-400 transition-all hover:scale-105" aria-label="Contactar por WhatsApp">
+    <span class="text-base" aria-hidden="true">💬</span>
+    <span class="hidden sm:inline">WhatsApp</span>
+  </a>
+
+</body>
+</html>

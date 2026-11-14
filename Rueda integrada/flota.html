@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flota y Servicios de Alquiler de Bicicletas · Rueda Libre Medellín</title>
+  <meta name="description" content="Conoce nuestra flota de bicicletas urbanas, plegables, de montaña y eléctricas en El Poblado, Medellín. Alquiler por horas o días con casco y candado incluidos.">
+  <link rel="icon" type="image/png" href="img/RUEDALIBRE.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/output.css">
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen font-sans antialiased selection:bg-emerald-500 selection:text-slate-950">
+
+  <a href="#contenido-principal" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-emerald-500 focus:text-slate-950 focus:font-bold focus:rounded-lg focus:outline-none focus:ring-4 focus:ring-emerald-400">
+    Saltar al contenido principal
+  </a>
+
+  <!-- Encabezado Global -->
+  <header class="w-full bg-slate-950/95 backdrop-blur-md border-b border-slate-800 sticky top-0 z-50">
+    <nav aria-label="Navegación principal" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex items-center justify-between gap-4">
+      
+      <a href="index.html" class="flex items-center gap-3 shrink-0 focus:outline-none focus:ring-2 focus:ring-emerald-400 rounded-xl group" aria-label="Rueda Libre, inicio">
+        <img src="img/RUEDALIBRE.png" alt="Logo de Rueda Libre" class="h-10 sm:h-12 w-auto object-contain drop-shadow group-hover:scale-105 transition-transform duration-200">
+        <div class="hidden sm:flex flex-col text-left">
+          <span class="text-lg font-black text-white tracking-tight leading-none">Rueda Libre</span>
+          <span class="text-[11px] font-bold text-emerald-400 tracking-wider uppercase">Flota & Servicios</span>
+        </div>
+      </a>
+
+      <ul class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-300 list-none p-0 m-0">
+        <li><a href="index.html" class="hover:text-emerald-400 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-400 rounded px-1.5 py-1">Inicio</a></li>
+        <li><a href="flota.html" class="text-emerald-400 font-bold border-b-2 border-emerald-400 pb-0.5" aria-current="page">Servicios & Flota</a></li>
+        <li>
+          <a href="nocturna.html" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 hover:bg-emerald-500/20 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-400">
+            <span>🌙 Rutas Nocturnas</span>
+          </a>
+        </li>
+        <li><a href="tarifas.html" class="hover:text-emerald-400 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-400 rounded px-1.5 py-1">Tarifas</a></li>
+        <li><a href="contacto.html" class="hover:text-emerald-400 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-400 rounded px-1.5 py-1">Sede & Contacto</a></li>
+      </ul>
+
+      <div class="flex items-center gap-3">
+        <a href="reservas.html" class="btn-primary text-xs sm:text-sm px-5 sm:px-6 py-2.5 sm:py-3 shadow-md">
+          Alquilar Bicicleta
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="contenido-principal" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20 sm:space-y-24 py-8 sm:py-12">
+
+    <!-- HERO DE FLOTA -->
+    <section aria-labelledby="titulo-flota" class="w-full bg-slate-900/90 rounded-3xl border border-slate-800 p-6 sm:p-10 md:p-14 shadow-2xl relative overflow-hidden text-center space-y-6">
+      <header class="max-w-3xl mx-auto space-y-4">
+        <span class="px-3.5 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 text-xs font-bold tracking-wider uppercase">
+          Flota Mantenida Profesionalemente
+        </span>
+        <h1 id="titulo-flota" class="text-3xl sm:text-5xl md:text-6xl font-black text-white tracking-tight">
+          Nuestra Flota de Bicicletas
+        </h1>
+        <p class="text-base sm:text-lg text-slate-300 font-normal leading-relaxed">
+          Desde bicicletas ligeras para ciclorrutas planas hasta modelos de montaña y eléctricas con asistencia. Inspeccionadas antes de cada rodada para garantizar máxima seguridad.
+        </p>
+      </header>
+    </section>
+
+    <!-- GRILLA DE MODELOS DE BICICLETAS -->
+    <section aria-labelledby="catalogo-bicis" class="space-y-8">
+      <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+        <h2 id="catalogo-bicis" class="text-xl sm:text-2xl font-bold text-white">Modelos Disponibles</h2>
+        <span class="text-xs text-slate-400">Casco y candado incluidos en todos</span>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Bici 1: Urbana Clásica -->
+        <article class="bg-slate-900/90 rounded-2xl border border-slate-800 p-5 space-y-4 flex flex-col justify-between hover:border-emerald-500/50 transition-colors">
+          <figure class="m-0 p-0">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSv17VDKGREY0RJnPzRziacMe22HFYHTMZLqUhs-YmP_7pPSvpgGDOmcSY&s=10" alt="Bicicleta Urbana Clásica" class="w-full h-40 object-contain rounded-xl bg-slate-950/60 p-2" loading="lazy">
+          </figure>
+          <div class="space-y-1.5">
+            <h3 class="text-base font-bold text-white">Urbana Clásica</h3>
+            <p class="text-xs text-slate-400">Cuadro de aluminio liviano, posición ergonómica vertical y canasta opcional.</p>
+          </div>
+          <div class="pt-3 border-t border-slate-800 flex items-center justify-between">
+            <span class="text-base font-black text-emerald-400">$10.000 <small class="text-xs text-slate-400 font-normal">/ h</small></span>
+            <a href="reservas.html" class="btn-primary text-xs px-3 py-1.5">Apartar</a>
+          </div>
+        </article>
+
+        <!-- Bici 2: Urbana Plegable -->
+        <article class="bg-slate-900/90 rounded-2xl border border-slate-800 p-5 space-y-4 flex flex-col justify-between hover:border-emerald-500/50 transition-colors">
+          <figure class="m-0 p-0">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkSqmMiK73mi7v0REi_UlheJehEZLHPZWkAqHgS5DTm2xWGRbEiJJ8yrc&s=10" alt="Bicicleta Urbana Plegable" class="w-full h-40 object-contain rounded-xl bg-slate-950/60 p-2" loading="lazy">
+          </figure>
+          <div class="space-y-1.5">
+            <h3 class="text-base font-bold text-white">Urbana Plegable</h3>
+            <p class="text-xs text-slate-400">Se compacta en 15 segundos. Perfecta para viajes intermodales con el Metro.</p>
+          </div>
+          <div class="pt-3 border-t border-slate-800 flex items-center justify-between">
+            <span class="text-base font-black text-emerald-400">$12.000 <small class="text-xs text-slate-400 font-normal">/ h</small></span>
+            <a href="reservas.html" class="btn-primary text-xs px-3 py-1.5">Apartar</a>
+          </div>
+        </article>
+
+        <!-- Bici 3: Montaña Trail -->
+        <article class="bg-slate-900/90 rounded-2xl border border-slate-800 p-5 space-y-4 flex flex-col justify-between hover:border-emerald-500/50 transition-colors">
+          <figure class="m-0 p-0">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROhZN_cinAggLwTcsWotWC5U-saC9yAXd62KQHYsrG-nnZnwT27A27g-S7&s=10" alt="Bicicleta Montaña Trail" class="w-full h-40 object-contain rounded-xl bg-slate-950/60 p-2" loading="lazy">
+          </figure>
+          <div class="space-y-1.5">
+            <h3 class="text-base font-bold text-white">Montaña Trail</h3>
+            <p class="text-xs text-slate-400">Suspensión delantera con bloqueo hidráulico y transmisión Shimano 21 vel.</p>
+          </div>
+          <div class="pt-3 border-t border-slate-800 flex items-center justify-between">
+            <span class="text-base font-black text-emerald-400">$15.000 <small class="text-xs text-slate-400 font-normal">/ h</small></span>
+            <a href="reservas.html" class="btn-primary text-xs px-3 py-1.5">Apartar</a>
+          </div>
+        </article>
+
+        <!-- Bici 4: Gravel Aventura -->
+        <article class="bg-slate-900/90 rounded-2xl border border-slate-800 p-5 space-y-4 flex flex-col justify-between hover:border-emerald-500/50 transition-colors">
+          <figure class="m-0 p-0">
+            <img src="https://dma.canyon.com/image/upload/w_511,h_288,c_fit/b_rgb:F2F2F2/f_auto/q_auto/v1777984099/2027_FULL_grizl_al-5_4443_R124_P01_ukxobb" alt="Bicicleta Gravel Aventura" class="w-full h-40 object-contain rounded-xl bg-slate-950/60 p-2" loading="lazy">
+          </figure>
+          <div class="space-y-1.5">
+            <h3 class="text-base font-bold text-white">Gravel Aventura</h3>
+            <p class="text-xs text-slate-400">Llantas anchas de 40c con agarre mixto para asfalto rápido o senderos.</p>
+          </div>
+          <div class="pt-3 border-t border-slate-800 flex items-center justify-between">
+            <span class="text-base font-black text-emerald-400">$18.000 <small class="text-xs text-slate-400 font-normal">/ h</small></span>
+            <a href="reservas.html" class="btn-primary text-xs px-3 py-1.5">Apartar</a>
+          </div>
+        </article>
+
+        <!-- Bici 5: Eléctrica Asistida -->
+        <article class="bg-slate-900/90 rounded-2xl border border-slate-800 p-5 space-y-4 flex flex-col justify-between hover:border-amber-500/50 transition-colors relative overflow-hidden">
+          <span class="absolute top-3 right-3 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-amber-500/10 text-amber-400 border border-amber-500/30">Top Gama</span>
+          <figure class="m-0 p-0">
+            <img src="img/electricas.png" alt="Bicicleta Eléctrica Asistida" class="w-full h-40 object-contain rounded-xl bg-slate-950/60 p-2" loading="lazy">
+          </figure>
+          <div class="space-y-1.5">
+            <h3 class="text-base font-bold text-white">Eléctrica Urbana</h3>
+            <p class="text-xs text-slate-400">Motor 250W con 45 km de autonomía. Sube las lomas de Medellín sin esfuerzo.</p>
+          </div>
+          <div class="pt-3 border-t border-slate-800 flex items-center justify-between">
+            <span class="text-base font-black text-amber-400">$25.000 <small class="text-xs text-slate-400 font-normal">/ h</small></span>
+            <a href="reservas.html" class="btn-primary text-xs px-3 py-1.5">Apartar</a>
+          </div>
+        </article>
+
+        <!-- Bici 6: Infantil -->
+        <article class="bg-slate-900/90 rounded-2xl border border-slate-800 p-5 space-y-4 flex flex-col justify-between hover:border-emerald-500/50 transition-colors">
+          <figure class="m-0 p-0">
+            <img src="https://homesale.com.co/cdn/shop/files/roadmaster-bicicleta-infantil-bicicletas-roadmaster-233710.jpg?v=1728741541" alt="Bicicleta Infantil" class="w-full h-40 object-contain rounded-xl bg-slate-950/60 p-2" loading="lazy">
+          </figure>
+          <div class="space-y-1.5">
+            <h3 class="text-base font-bold text-white">Infantil (6 a 10 años)</h3>
+            <p class="text-xs text-slate-400">Geometría segura, manubrio bajo y frenos de suave pulsación para niños.</p>
+          </div>
+          <div class="pt-3 border-t border-slate-800 flex items-center justify-between">
+            <span class="text-base font-black text-emerald-400">$8.000 <small class="text-xs text-slate-400 font-normal">/ h</small></span>
+            <a href="reservas.html" class="btn-primary text-xs px-3 py-1.5">Apartar</a>
+          </div>
+        </article>
+
+        <!-- Bici 7: Tándem Doble -->
+        <article class="bg-slate-900/90 rounded-2xl border border-slate-800 p-5 space-y-4 flex flex-col justify-between hover:border-emerald-500/50 transition-colors">
+          <figure class="m-0 p-0">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu1nMirJc92X5e9qxNK_mDS4SBj4qMi35R6WT9PdxfCQ&s=10" alt="Bicicleta Tándem" class="w-full h-40 object-contain rounded-xl bg-slate-950/60 p-2" loading="lazy">
+          </figure>
+          <div class="space-y-1.5">
+            <h3 class="text-base font-bold text-white">Tándem Doble</h3>
+            <p class="text-xs text-slate-400">Bicicleta para dos ciclistas coordinados. Ideal para citas, amigos y turismo.</p>
+          </div>
+          <div class="pt-3 border-t border-slate-800 flex items-center justify-between">
+            <span class="text-base font-black text-emerald-400">$20.000 <small class="text-xs text-slate-400 font-normal">/ h</small></span>
+            <a href="reservas.html" class="btn-primary text-xs px-3 py-1.5">Apartar</a>
+          </div>
+        </article>
+
+        <!-- Card Resumen Tarifas -->
+        <article class="bg-gradient-to-br from-slate-900 to-emerald-950/50 rounded-2xl border border-emerald-500/30 p-5 space-y-3 flex flex-col justify-between">
+          <div class="space-y-2">
+            <span class="text-2xl">📋</span>
+            <h3 class="text-base font-bold text-white">Tarifas por Día Completo</h3>
+            <p class="text-xs text-slate-300">Ahorra con tarifas fijas por medio día (4 h) o día completo para paseos largos.</p>
+          </div>
+          <a href="tarifas.html" class="btn-secondary text-xs text-center py-2">Ver Tabla de Tarifas →</a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SERVICIO DE TALLER -->
+    <section aria-labelledby="titulo-taller" class="bg-slate-900/60 rounded-3xl border border-slate-800 p-8 sm:p-12 space-y-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <figure class="m-0 p-0">
+          <img src="img/taller.jpeg" alt="Taller mecánico Rueda Libre" class="w-full h-64 object-cover rounded-2xl border border-slate-800">
+        </figure>
+        <div class="space-y-4">
+          <span class="text-xs uppercase font-bold tracking-widest text-emerald-400">Mecánica Profesional</span>
+          <h2 id="titulo-taller" class="text-2xl sm:text-3xl font-black text-white">Taller Mecánico en Sede El Poblado</h2>
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+            Ofrecemos calibración de cambios, purga de frenos de disco, lubricación de cadena con cera ecológica, alineación de rines y parches inmediatos para despinches.
+          </p>
+          <a href="contacto.html" class="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-400 hover:underline">
+            Conoce la ubicación de nuestro taller →
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="w-full bg-slate-950 border-t border-slate-800 mt-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-8 text-center sm:text-left">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 border-b border-slate-800 pb-8">
+        <div class="flex items-center gap-3">
+          <img src="img/RUEDALIBRE.png" alt="Rueda Libre" class="h-10 w-auto">
+          <span class="text-lg font-black text-white">Rueda Libre Medellín</span>
+        </div>
+        <p class="text-xs text-slate-400 m-0">Alquiler de bicicletas y taller profesional en El Poblado.</p>
+      </div>
+      <div class="flex flex-wrap items-center justify-center sm:justify-between gap-4 text-xs text-slate-400">
+        <div class="flex items-center gap-4">
+          <a href="index.html" class="hover:text-emerald-400">Inicio</a>
+          <a href="flota.html" class="hover:text-emerald-400">Flota</a>
+          <a href="nocturna.html" class="hover:text-emerald-400">Rutas Nocturnas</a>
+          <a href="tarifas.html" class="hover:text-emerald-400">Tarifas</a>
+          <a href="reservas.html" class="hover:text-emerald-400">Reservas</a>
+          <a href="contacto.html" class="hover:text-emerald-400">Contacto</a>
+        </div>
+        <p class="m-0">© 2026 Rueda Libre Medellín. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/573000000000" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-40 bg-emerald-500 text-slate-950 hover:bg-emerald-400 font-bold px-4 py-3 rounded-full shadow-2xl flex items-center gap-2 text-xs sm:text-sm focus:outline-none focus:ring-4 focus:ring-emerald-400 transition-all hover:scale-105" aria-label="Contactar por WhatsApp">
+    <span class="text-base" aria-hidden="true">💬</span>
+    <span class="hidden sm:inline">WhatsApp</span>
+  </a>
+
+</body>
+</html>
