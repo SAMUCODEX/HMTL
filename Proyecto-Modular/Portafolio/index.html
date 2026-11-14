@@ -1,148 +1,255 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-bs-theme="dark">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio profesional de Samuel Monsalve. Desarrollador de Software en formación enfocado en Full Stack, DevOps, Ciberseguridad e IA.">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0a0e17">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Samuel Monsalve | Desarrollador de Software">
+    <meta property="og:description" content="Portafolio profesional de Samuel Monsalve. Soluciones digitales, ingeniería de software y proyectos tecnológicos.">
+    <meta property="og:locale" content="es_ES">
+
     <title>Samuel Monsalve | Desarrollador de Software</title>
+
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteUpBERwTkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous" defer></script>
+    <script src="js/main.js" defer></script>
 </head>
 
 <body>
 
-    <nav class="navbar">
-        <a href="#" class="nav-logo">&lt;SM/&gt;</a>
-        <ul class="nav-links">
-            <li><a href="#sobre-mi">Sobre mí</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
+    <a href="#contenido-principal" class="skip-link">Saltar al contenido principal</a>
+
+    <nav class="navbar navbar-expand-md sticky-top custom-navbar" aria-label="Navegación principal">
+        <section class="container">
+            <a class="navbar-brand nav-logo" href="#" aria-label="Inicio Samuel Monsalve">&lt;SM/&gt;</a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Abrir menú de navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <section class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav gap-md-2 mt-3 mt-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link custom-nav-link" href="#sobre-mi">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-nav-link" href="#habilidades">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-nav-link" href="#proyectos">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </section>
+        </section>
     </nav>
 
-    <header class="hero">
-        <h1>Samuel <span class="accent">Monsalve</span></h1>
-        <p class="hero-subtitle">Desarrollador de Software en Formación</p>
-        <p class="hero-description">
+    <header class="hero container py-5 text-center">
+        <h1 class="hero-title fw-bold">Samuel <span class="accent">Monsalve</span></h1>
+        <p class="hero-subtitle mb-3">Desarrollador de Software en Formación</p>
+        <p class="hero-description mx-auto mb-4">
             Apasionado por la tecnología, la ingeniería de software y la creación de soluciones digitales.
         </p>
-        <ul class="hero-badges">
-            <li class="badge">Full Stack</li>
-            <li class="badge">DevOps</li>
-            <li class="badge">Ciberseguridad</li>
-            <li class="badge">IA &amp; Automatización</li>
+        <ul class="hero-badges list-unstyled d-flex flex-wrap justify-content-center gap-2 mb-4">
+            <li class="badge custom-badge">Full Stack</li>
+            <li class="badge custom-badge">DevOps</li>
+            <li class="badge custom-badge">Ciberseguridad</li>
+            <li class="badge custom-badge">IA &amp; Automatización</li>
         </ul>
-        <nav class="hero-cta">
-            <a href="#proyectos" class="btn btn-primary">Ver Proyectos</a>
-            <a href="#contacto" class="btn btn-outline">Contacto</a>
+        <nav class="hero-cta d-flex flex-column flex-sm-row justify-content-center gap-3" aria-label="Llamados a la acción">
+            <a href="#proyectos" class="btn btn-primary-custom">
+                <i class="fas fa-folder-open me-2" aria-hidden="true"></i>Ver Proyectos
+            </a>
+            <a href="#contacto" class="btn btn-outline-custom">
+                <i class="fas fa-paper-plane me-2" aria-hidden="true"></i>Contacto
+            </a>
         </nav>
     </header>
 
-    <main>
+    <main id="contenido-principal">
 
-        <section id="sobre-mi" class="section">
-            <h2>Sobre mí</h2>
-            <ul class="about-grid">
-                <li class="about-card">
-                    <h3><i class="fas fa-code"></i> Desarrollador</h3>
-                    <p>Desarrollador de software en formación con intereses en Full Stack, Frontend, Backend, DevOps, ciberseguridad, inteligencia artificial y automatización.</p>
+        <section id="sobre-mi" class="section container py-5">
+            <h2 class="section-title text-center mb-5">Sobre mí</h2>
+            <ul class="row g-4 list-unstyled mb-0">
+                <li class="col-12 col-md-4">
+                    <article class="card h-100 custom-card">
+                        <section class="card-body p-4">
+                            <h3 class="card-title h5 mb-3">
+                                <i class="fas fa-code text-accent me-2" aria-hidden="true"></i>Desarrollador
+                            </h3>
+                            <p class="card-text text-secondary mb-0">
+                                Desarrollador de software en formación con intereses en Full Stack, Frontend, Backend, DevOps, ciberseguridad, inteligencia artificial y automatización.
+                            </p>
+                        </section>
+                    </article>
                 </li>
-                <li class="about-card">
-                    <h3><i class="fas fa-brain"></i> Mentalidad</h3>
-                    <p>Disciplina, liderazgo, pensamiento analítico, curiosidad tecnológica y aprendizaje continuo. Mejora constante y búsqueda de la excelencia.</p>
+                <li class="col-12 col-md-4">
+                    <article class="card h-100 custom-card">
+                        <section class="card-body p-4">
+                            <h3 class="card-title h5 mb-3">
+                                <i class="fas fa-brain text-accent me-2" aria-hidden="true"></i>Mentalidad
+                            </h3>
+                            <p class="card-text text-secondary mb-0">
+                                Disciplina, liderazgo, pensamiento analítico, curiosidad tecnológica y aprendizaje continuo. Mejora constante y búsqueda de la excelencia.
+                            </p>
+                        </section>
+                    </article>
                 </li>
-                <li class="about-card">
-                    <h3><i class="fas fa-fist-raised"></i> Peleador</h3>
-                    <p>Practicante de MMA, Muay Thai y BJJ. El combate refleja disciplina, resiliencia, determinación y mentalidad competitiva.</p>
-                </li>
-            </ul>
-        </section>
-
-        <section id="habilidades" class="section">
-            <h2>Habilidades</h2>
-            <ul class="skills-grid">
-                <li class="skill-category">
-                    <h3>Frontend</h3>
-                    <ul class="skill-tags">
-                        <li class="skill-tag">HTML5</li>
-                        <li class="skill-tag">CSS3</li>
-                        <li class="skill-tag">JavaScript</li>
-                        <li class="skill-tag">React</li>
-                    </ul>
-                </li>
-                <li class="skill-category">
-                    <h3>Backend</h3>
-                    <ul class="skill-tags">
-                        <li class="skill-tag">Java</li>
-                        <li class="skill-tag">Python</li>
-                        <li class="skill-tag">Node.js</li>
-                        <li class="skill-tag">SQL</li>
-                    </ul>
-                </li>
-                <li class="skill-category">
-                    <h3>DevOps &amp; Herramientas</h3>
-                    <ul class="skill-tags">
-                        <li class="skill-tag">Git</li>
-                        <li class="skill-tag">Docker</li>
-                        <li class="skill-tag">Linux</li>
-                        <li class="skill-tag">Bash</li>
-                    </ul>
-                </li>
-                <li class="skill-category">
-                    <h3>Seguridad &amp; IA</h3>
-                    <ul class="skill-tags">
-                        <li class="skill-tag">Ciberseguridad</li>
-                        <li class="skill-tag">IA</li>
-                        <li class="skill-tag">Automatización</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-
-        <section id="proyectos" class="section">
-            <h2>Proyectos</h2>
-            <ul class="projects-grid">
-                <li>
-                    <article class="project-card">
-                        <h3>Fight‑Code</h3>
-                        <p>Proyecto personal que fusiona la pasión por las artes marciales y la programación.</p>
-                        <ul class="project-tech">
-                            <li>HTML5</li>
-                            <li>CSS3</li>
-                            <li>JavaScript</li>
-                        </ul>
-                        <a href="https://github.com/samuel239272/Fight-Code.git" target="_blank" class="btn btn-sm">
-                            <i class="fab fa-github"></i> Ver en GitHub
-                        </a>
+                <li class="col-12 col-md-4">
+                    <article class="card h-100 custom-card">
+                        <section class="card-body p-4">
+                            <h3 class="card-title h5 mb-3">
+                                <i class="fas fa-fist-raised text-accent me-2" aria-hidden="true"></i>Peleador
+                            </h3>
+                            <p class="card-text text-secondary mb-0">
+                                Practicante de MMA, Muay Thai y BJJ. El combate refleja disciplina, resiliencia, determinación y mentalidad competitiva.
+                            </p>
+                        </section>
                     </article>
                 </li>
             </ul>
         </section>
 
-        <section id="contacto" class="section">
-            <h2>Contacto</h2>
-            <address class="contact-grid">
-                <a href="mailto:smonsalvebustamante@gmail.com" class="contact-card">
-                    <i class="fas fa-envelope"></i>
-                    <span>smonsalvebustamante@gmail.com</span>
-                </a>
-                <a href="tel:+573146721814" class="contact-card">
-                    <i class="fas fa-phone"></i>
-                    <span>+57 314 6721814</span>
-                </a>
-                <a href="https://github.com/samuel239272" target="_blank" class="contact-card">
-                    <i class="fab fa-github"></i>
-                    <span>samuel239272</span>
-                </a>
+        <section id="habilidades" class="section container py-5">
+            <h2 class="section-title text-center mb-5">Habilidades</h2>
+            <ul class="row g-4 list-unstyled mb-0">
+                <li class="col-12 col-sm-6 col-lg-3">
+                    <article class="card h-100 custom-card">
+                        <section class="card-body p-4">
+                            <h3 class="skill-category-title mb-3">Frontend</h3>
+                            <ul class="d-flex flex-wrap gap-2 list-unstyled mb-0">
+                                <li class="skill-tag">HTML5</li>
+                                <li class="skill-tag">CSS3</li>
+                                <li class="skill-tag">JavaScript</li>
+                                <li class="skill-tag">React</li>
+                            </ul>
+                        </section>
+                    </article>
+                </li>
+                <li class="col-12 col-sm-6 col-lg-3">
+                    <article class="card h-100 custom-card">
+                        <section class="card-body p-4">
+                            <h3 class="skill-category-title mb-3">Backend</h3>
+                            <ul class="d-flex flex-wrap gap-2 list-unstyled mb-0">
+                                <li class="skill-tag">Java</li>
+                                <li class="skill-tag">Python</li>
+                                <li class="skill-tag">SQL</li>
+                            </ul>
+                        </section>
+                    </article>
+                </li>
+                <li class="col-12 col-sm-6 col-lg-3">
+                    <article class="card h-100 custom-card">
+                        <section class="card-body p-4">
+                            <h3 class="skill-category-title mb-3">DevOps &amp; Herramientas</h3>
+                            <ul class="d-flex flex-wrap gap-2 list-unstyled mb-0">
+                                <li class="skill-tag">Git</li>
+                                <li class="skill-tag">Docker</li>
+                                <li class="skill-tag">Linux</li>
+                                <li class="skill-tag">Bash</li>
+                            </ul>
+                        </section>
+                    </article>
+                </li>
+                <li class="col-12 col-sm-6 col-lg-3">
+                    <article class="card h-100 custom-card">
+                        <section class="card-body p-4">
+                            <h3 class="skill-category-title mb-3">Seguridad &amp; IA</h3>
+                            <ul class="d-flex flex-wrap gap-2 list-unstyled mb-0">
+                                <li class="skill-tag">Ciberseguridad</li>
+                                <li class="skill-tag">IA</li>
+                                <li class="skill-tag">Automatización</li>
+                            </ul>
+                        </section>
+                    </article>
+                </li>
+            </ul>
+        </section>
+
+        <section id="proyectos" class="section container py-5">
+            <h2 class="section-title text-center mb-5">Proyectos</h2>
+            <ul class="row g-4 justify-content-center list-unstyled mb-0">
+                <li class="col-12 col-md-6 col-lg-5">
+                    <article class="card h-100 custom-card">
+                        <section class="card-body p-4 d-flex flex-column">
+                            <h3 class="card-title h5 mb-2">Fight‑Code</h3>
+                            <p class="card-text text-secondary flex-grow-1">
+                                Proyecto personal que fusiona la pasión por las artes marciales y la programación.
+                            </p>
+                            <ul class="d-flex flex-wrap gap-2 my-3 list-unstyled mb-0">
+                                <li class="project-tech-tag">HTML5</li>
+                                <li class="project-tech-tag">CSS3</li>
+                                <li class="project-tech-tag">JavaScript</li>
+                            </ul>
+                            <nav class="mt-3" aria-label="Enlaces del proyecto Fight-Code">
+                                <a href="https://github.com/s4muelxmnjl/Fight-Code.git" target="_blank"
+                                    rel="noopener noreferrer" class="btn btn-outline-custom btn-sm">
+                                    <i class="fab fa-github me-1" aria-hidden="true"></i>Ver en GitHub
+                                </a>
+                            </nav>
+                        </section>
+                    </article>
+                </li>
+            </ul>
+        </section>
+
+        <section id="contacto" class="section container py-5">
+            <h2 class="section-title text-center mb-5">Contacto</h2>
+            <address class="mb-0 fst-normal">
+                <ul class="row g-3 justify-content-center list-unstyled mb-0">
+                    <li class="col-12 col-md-4">
+                        <a href="mailto:smonsalvebustamante@gmail.com"
+                            class="contact-card h-100 text-decoration-none d-flex align-items-center"
+                            aria-label="Enviar correo a smonsalvebustamante@gmail.com">
+                            <i class="fas fa-envelope fa-lg text-accent me-3" aria-hidden="true"></i>
+                            <span class="contact-text text-truncate">smonsalvebustamante@gmail.com</span>
+                        </a>
+                    </li>
+                    <li class="col-12 col-md-4">
+                        <a href="tel:+573146721814"
+                            class="contact-card h-100 text-decoration-none d-flex align-items-center"
+                            aria-label="Llamar al teléfono +57 314 6721814">
+                            <i class="fas fa-phone fa-lg text-accent me-3" aria-hidden="true"></i>
+                            <span class="contact-text">+57 314 6721814</span>
+                        </a>
+                    </li>
+                    <li class="col-12 col-md-4">
+                        <a href="https://github.com/s4muelxmnjl" target="_blank" rel="noopener noreferrer"
+                            class="contact-card h-100 text-decoration-none d-flex align-items-center"
+                            aria-label="Visitar perfil de GitHub de s4muelxmnjl">
+                            <i class="fab fa-github fa-lg text-accent me-3" aria-hidden="true"></i>
+                            <span class="contact-text">s4muelxmnjl</span>
+                        </a>
+                    </li>
+                </ul>
             </address>
         </section>
 
     </main>
 
-    <footer>
-        <p>&copy; 2026 Samuell. Todos los derechos reservados.</p>
+    <footer class="footer py-4 text-center">
+        <p class="mb-0 text-secondary">&copy; 2026 Samuell. Todos los derechos reservados.</p>
     </footer>
 
 </body>
