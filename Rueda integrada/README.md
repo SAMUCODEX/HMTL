@@ -233,5 +233,4 @@ Así se integraron de forma sinérgica los 12 MiniRetos del módulo en la soluci
 
 - **Desarrollador:** Samuel Monsalve Bustamante ([@SAMUCODEX](https://github.com/SAMUCODEX))
 - **Proyecto:** Ecosistema Digital Rueda Libre & Rueda Nocturna
-- **Institución:** Nodo Digital / Cohorte 8
 - **Año:** 2026 · Medellín, Colombia
