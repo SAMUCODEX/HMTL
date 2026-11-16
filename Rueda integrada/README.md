@@ -231,7 +231,7 @@ Así se integraron de forma sinérgica los 12 MiniRetos del módulo en la soluci
 
 ## 👤 Autor
 
-- **Desarrollador:** Abraham Sánchez Cardona ([@samuel239272](https://github.com/samuel239272))
+- **Desarrollador:** Samuel Monsalve Bustamante ([@samuel239272](https://github.com/SAMUCODEX))
 - **Proyecto:** Ecosistema Digital Rueda Libre & Rueda Nocturna
 - **Institución:** Nodo Digital / Cohorte 8
 - **Año:** 2026 · Medellín, Colombia
